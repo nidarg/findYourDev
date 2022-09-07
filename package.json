@@ -1,0 +1,36 @@
+{
+  "name": "findyourdeveloper",
+  "version": "1.0.0",
+  "description": "developers ready to be hired",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "build-client": "cd frontend && npm run build",
+    "install-client": "cd frontend && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build-client",
+    "server": "nodemon server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "GG",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.6.0",
+    "express-validator": "^6.14.0",
+    "gravatar": "^1.8.2",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "modules": "^0.4.0",
+    "mongoose": "^6.2.10",
+    "node": "16.14.2",
+    "nvm": "^0.0.4",
+    "request": "^2.88.2",
+    "xss-clean": "^0.1.1"
+  }
+}
