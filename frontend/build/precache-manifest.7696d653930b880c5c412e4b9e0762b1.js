@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/landing-photo-2.ba1d19cd.jpg"
   },
   {
-    "revision": "b9394d561fcae64dc0e075a77654e4f1",
+    "revision": "ac01fe79c17a7848812f0bf0bd2bfa09",
     "url": "/index.html"
   }
 ];
